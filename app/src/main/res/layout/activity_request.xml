@@ -1,0 +1,133 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainerRequest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.RequestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textViewClientFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                tools:text="Петров Иван Иванович" />
+
+            <TextView
+                android:id="@+id/textViewMobilePhoneFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewClientFull"
+                android:textStyle="bold"
+                tools:text="8-800-555-35-35" />
+
+            <TextView
+                android:id="@+id/textViewUidFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewMobilePhoneFull"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                tools:text="VM512MAG" />
+
+            <LinearLayout
+                android:id="@+id/linerLayoutAddressFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewUidFull"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewCityFull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    tools:text="Санкт-Петербург" />
+
+                <TextView
+                    android:id="@+id/textViewAddressFull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:text="Улица Ленина" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerLayoutTimeDateFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linerLayoutAddressFull"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMeeTingDateFull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="2020-01-30" />
+
+                <TextView
+                    android:id="@+id/textViewTimeWindowFull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    tools:text="с 10 до 12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewProductFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linerLayoutTimeDateFull"
+                android:layout_marginTop="5dp"
+                android:textStyle="italic"
+                tools:text="Тест продукт для заявок" />
+
+            <TextView
+                android:id="@+id/textViewDateKkoFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewProductFull"
+                android:layout_marginTop="5dp"
+                tools:text="dateKko" />
+
+            <TextView
+                android:id="@+id/textViewAssignDateFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDateKkoFull"
+                android:layout_marginTop="5dp"
+                tools:text="AssignDate" />
+
+            <TextView
+                android:id="@+id/textViewSdoFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAssignDateFull"
+                android:layout_marginTop="5dp"
+                tools:text="AssignDate" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="text_size_button">12sp</dimen>
+    <dimen name="width_login_form">200dp</dimen>
+</resources>

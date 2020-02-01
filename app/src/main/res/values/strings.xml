@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EdiCourier</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="button_date_from">Select date from</string>
+    <string name="button_date_to">Select date to</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="no_uid_data">No uid data:</string>
+</resources>
